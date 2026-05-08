@@ -1,0 +1,73 @@
+/*黑色导航开始*/
+.blank-nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    font-size: 12px;
+}
+.wrap{
+    width: 1226px;
+    margin: 0 auto;
+}
+.black-nav-left{
+    float: left;
+}
+.black-nav-right{
+    float: right;
+}
+.blank-nav li{
+    float:left;/*让li标签水平排列*/
+    position: relative;
+    /*保留原有位置，还能相对自身微调位置，也能给绝对定位子元素做参照。*/
+}
+.blank-nav a{
+    color: #b0b0b0;
+}
+.blank-nav span{
+    color: #424242;
+    margin: 0 5px;
+}
+.dowload{
+    width: 124px;
+    height: 0;
+    background: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -62px;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 10;
+}
+.dowload img{
+    width: 90px;
+    margin: 18px auto 0;
+}
+.dowload p{
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+}
+/*下载app图片弹出来的效果*/
+.black-nav-left li:hover .dowload{
+    height: 148px;
+}
+/*箭头*/
+.stri{
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -8px;
+    display: none;
+}
+.black-nav-left>li:hover .stri{
+    display: block;
+}
+/*黑色导航结束*/
